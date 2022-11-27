@@ -1,0 +1,275 @@
+@font-face {
+    font-family: josefin;
+    src: url(/JosefinSans-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'josefin';
+    box-sizing: border-box;
+}
+
+html{
+    overflow: auto;
+    scroll-behavior:smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    height: 88vh;
+    background-position: center;
+    background-size: cover ;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span{
+    color: rgb(153, 70, 153);
+}
+
+.logo{
+    color: white;
+    width: 120px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 20% auto;
+    /* font-weight: 500; */
+    font-size: 25px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.navbar ul li a:hover{
+    color: rgb(153, 70, 153);
+}
+
+.dropdwn{
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+}
+
+.dropdwn-hover{
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.dropdwn-menu{
+    position: absolute;
+    display: none;
+    top: 80%;
+    left: 20%;
+    min-width: 50px;
+    background: transparent;
+    color: #fff;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.dropdwn:hover .dropdwn-menu{
+    display: block;
+}
+
+.dropdwn-menu a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    transition: .5s;
+}
+
+.dropdwn-menu a:hover{
+    background-color: transparent;
+    color: rgb(153, 70, 153);
+}
+
+
+/* header */
+
+.head-con{
+    color: #fff;
+    display: block;
+    width: 50%;
+    margin: 10% auto;
+}
+
+.head-con h2 {
+    text-align: center;
+    /* margin: 20px; */
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(153, 70, 153);
+}
+
+.head-con h2 a{
+    color: rgb(153, 70, 153);
+}
+
+
+/* Body Content */
+
+.content{
+    width: 70%;
+    margin: 80px auto;
+    
+}
+
+.content p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.content .gallery{
+    margin: 50px auto;
+}
+
+.content .gallery h2{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.content .gallery .gallery-img img{
+    width: 450px;
+    height: 360px;
+}
+
+.content .gallery .gallery-img{
+    margin: 30px auto ;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#footer{
+    width: 100%;
+    height: 25vh;
+    background-color: #cac6c6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+#footer a:hover{
+    color: rgb(250, 120, 250);
+}
+#wrapper .header .navbar > iconify-icon,
+#wrapper .header .navbar > .nav-bg{
+    display: none;
+}
+
+
+@media screen and (max-width: 480px){
+    #wrapper .header .navbar{
+        padding: 20px;
+    }
+    #wrapper .header .navbar #nav{
+        display: none;
+    }
+    #wrapper .header .navbar{
+        position: relative;
+    }
+    #wrapper .header .navbar #nav .dropdwn .dropdwn-menu{
+        top: 0;
+        left: 100%;
+    }
+    #wrapper .header .navbar #nav .dropdwn .dropdwn-menu a{
+        color: black;
+    }
+    #wrapper .header .navbar > iconify-icon{
+        display: inline-block;
+        font-size: 38px;
+        color: #fff;
+    }
+    #wrapper .header .navbar > .close{
+        display: none;
+        position: fixed;
+        z-index: 2;
+        color: #000;
+        right: 20px;
+    }
+    #wrapper .header .navbar > .nav-bg{
+        display: none;
+        position: fixed;
+        top: -20px;
+        left: -15px;
+        background-color: rgba(0, 0, 0, 0.705);
+        height: 110vh;
+        width: 108%;
+        z-index: 1;
+    }
+    #wrapper .header .navbar .nav li a{
+        width: 50%;
+        margin-top: 10px;
+        color: #000;
+        z-index: 2;
+        display: block;
+    }
+    #wrapper .header .navbar .nav{
+        background-color: #f5f5f5;
+        width: 100%;
+        height: 50vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 70px;
+        display: none;
+        z-index: 2;
+    }
+    .content .gallery .gallery-img img{
+        width: 380px;
+    }
+    .head-con{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 300px;
+    }
+}
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="otherpage.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegushi Beach</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="header"
+        style="background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(elegushi/Entrance-gate-of-the-elegushi-beach.jpg);">
+            <div class="navbar">
+                <h1 class="logo"><span>Tour</span> Hero</h1>
+                <ul class="nav" id="nav">
+                    <li><a href="/index.html">Home</a></li>
+                    <div class="dropdwn">
+                        <li><a href="#" class="dropdwn-hover">Explore</a></li>
+                        <div class="dropdwn-menu">
+                            <a href="#">Cities</a>
+                            <a href="#">Attractions</a>
+                            <a href="#">Hotels</a>
+                            <a href="#">Foods</a>
+                            <a href="#">Festivals</a>
+                        </div>
+                    </div>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <iconify-icon icon="ic:round-menu" class="hamburger-menu"></iconify-icon>
+                <div class="nav-bg" ></div>
+                <iconify-icon icon="ic:round-close" class="close"></iconify-icon>
+            </div>
+            <div class="head-con">
+                <h2><a href="https://goo.gl/maps/jFLiQuQY4sRstmjTA" target="_blank"> Elegushi Beach,<br>Lekki</a></h2>
+            </div>
+        </div>
+
+        <div class="content">
+            <p>
+                Elegushi beach is a delight to fun-seekers, as it offers a variety of activities, 
+                especially during festive periods.However, with the Elegushi beach, 
+                one is bound to have fun no matter the size of the pocket. 
+                Entry to the beach is N1, 000 per person and N200 for the car park. 
+                So, making a decision on how much to spend at the beach is relative as it is 
+                basically hinged on how long one would be staying, 
+                preferences and intentions.
+                <br><br>
+                Elegushi offers a mix of music, food, beautiful scenery of water. 
+                It is a must visit place for any tourist for its white sand beach ripping waves that lap the shoreline. 
+                It provides the ultimate relaxation for any.
+                
+
+            </p>
+            <div class="gallery">
+            <h2>Gallery</h2>
+                <div class="gallery-img">
+                    <img src="elegushi/elegushi-beach-photos-3-1024x683.jpg" alt="Picture of Elegushi Beach" class="img1">
+                    <img src="elegushi/Horse-coalition-at-elegushi-beach-lagos.jpg" alt="Picture of Elegushi Beach" class="img2">
+                    <img src="elegushi/Lady-sitting-on-a-stone-in-elegushi-beach-lagos.jpg" alt="Picture of Elegushi Beach" class="img3">
+                    <img src="elegushi/A-lady-swimming-at-elegushi-beach-lagos.jpg" alt="Picture of Elegushi Beach" class="img4">
+                    <img src="elegushi/Street-readers-at-elegushi-beach.jpg" alt="Picture of Elegushi Beach" class="img5">
+                    <img src="elegushi/Elegushi-Beach-Lagos.jpg" alt="Picture of Elegushi Beach" class="img5">
+                    <img src="elegushi/Young-people-sitting-on-wave-breaker-at-elegushi-beach.jpg" alt="Picture of Elegushi Beach" class="img6">
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="contact">
+            <h3>Contact Us</h3>
+            <h5>Tel: <a href="tel:+2348107456097">+2348107456097</a></h5>
+            <h5>Email: <a href="mailto:olukoluu@gmail.com">olukoluu@gmail.com</a></h5>
+            <h5>Website: <a href="www.biola.com">www.biola.com</a></h5>
+            </div>
+            <div class="social">
+                <h3>Social Handles</h3>
+                <h5><a href="#">Twitter</a></h5>
+                <h5><a href="#">Instagram</a></h5>
+                <h5><a href="#">Facebook</a></h5>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script>
+        const hamMenu = document.querySelector('.hamburger-menu');
+        const closeMenu = document.querySelector('.close');
+        const navBg = document.querySelector('.nav-bg');
+        const navMenu = document.querySelector('.nav');
+        const wrapper = document.querySelector('body')
+        hamMenu.addEventListener('click', function(){
+            navBg.style.display = 'block';
+            closeMenu.style.display = 'block';
+            navMenu.style.display = 'block';
+        });
+        closeMenu.addEventListener('click', function(){
+            navBg.style.display = 'none';
+            closeMenu.style.display = 'none';
+            navMenu.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

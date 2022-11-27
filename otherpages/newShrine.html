@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="otherpage.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The New Afrika Shrine</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="header"
+        style="background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(AfrikaShrine/NAS2.jpg);">
+            <div class="navbar">
+                <h1 class="logo"><span>Tour</span> Hero</h1>
+                <ul class="nav" id="nav">
+                    <li><a href="/index.html">Home</a></li>
+                    <div class="dropdwn">
+                        <li><a href="#" class="dropdwn-hover">Explore</a></li>
+                        <div class="dropdwn-menu">
+                            <a href="#">Cities</a>
+                            <a href="#">Attractions</a>
+                            <a href="#">Hotels</a>
+                            <a href="#">Foods</a>
+                            <a href="#">Festivals</a>
+                        </div>
+                    </div>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <iconify-icon icon="ic:round-menu" class="hamburger-menu"></iconify-icon>
+                <div class="nav-bg" ></div>
+                <iconify-icon icon="ic:round-close" class="close"></iconify-icon>
+            </div>
+            <div class="head-con">
+                <h2><a href="https://g.page/afrikashrine?share" target="_blank"> The New Afrika Shrine,<br>Ikeja</a></h2>
+            </div>
+        </div>
+
+        <div class="content">
+            <p>
+                The New Afrika Shrine is an open air entertainment centre located in Ikeja, Lagos State. 
+                It serves as the host location of the annual Felabration music festival. 
+                Currently managed by Femi Kuti (eldest son of Fela Kuti) and Yeni Anikulapo-Kuti, 
+                it is the replacement of the old Afrika Shrine created in 1970 by Fela Kuti until it was burnt down in 1977. 
+                The New Afrika Shrine showcases photo galleries of Fela and music performances by Femi Kuti and Seun Kuti 
+                thus making it a tourist attraction.
+                <br><br>
+                There is no entrance fee for most events at the New Afrika Shrine, 
+                 the doors are open 24/7, and everyone – locals and overseas visitors, 
+                 rich and poor, black and white – is given the same warm welcome, 
+                 often by Yeni herself when she is in town. 
+                 Femi performs with his band The Positive Force every Thursday and Sunday, 
+                 unless he is away on tour. His younger brother Seun appears with 
+                 Egypt 80 on the last Saturday of every month, unless he is on tour. 
+                 There is a popular disco night on Fridays.
+            </p>
+            <div class="gallery">
+            <h2>Gallery</h2>
+                <div class="gallery-img">
+                    <img src="AfrikaShrine/NAS2.jpg" alt="Picture of New Afrika Shrine" class="img1">
+                    <img src="AfrikaShrine/NAS3.jpeg" alt="Picture of New Afrika Shrine" class="img2">
+                    <img src="AfrikaShrine/NAS5.jpg" alt="Picture of New Afrika Shrine" class="img3">
+                    <img src="AfrikaShrine/NAS4.jpg" alt="Picture of New Afrika Shrine" class="img4">
+                    <img src="AfrikaShrine/NAS6.webp" alt="Picture of New Afrika Shrine" class="img5">
+                    <img src="AfrikaShrine/NAS7.png" alt="Picture of New Afrika Shrine" class="img6">
+                    <img src="AfrikaShrine/NAS8.jpg" alt="Picture of New Afrika Shrine" class="img7">
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="contact">
+            <h3>Contact Us</h3>
+            <h5>Tel: <a href="tel:+2348107456097">+2348107456097</a></h5>
+            <h5>Email: <a href="mailto:olukoluu@gmail.com">olukoluu@gmail.com</a></h5>
+            <h5>Website: <a href="www.biola.com">www.biola.com</a></h5>
+            </div>
+            <div class="social">
+                <h3>Social Handles</h3>
+                <h5><a href="#">Twitter</a></h5>
+                <h5><a href="#">Instagram</a></h5>
+                <h5><a href="#">Facebook</a></h5>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script>
+        const hamMenu = document.querySelector('.hamburger-menu');
+        const closeMenu = document.querySelector('.close');
+        const navBg = document.querySelector('.nav-bg');
+        const navMenu = document.querySelector('.nav');
+        const wrapper = document.querySelector('body')
+        hamMenu.addEventListener('click', function(){
+            navBg.style.display = 'block';
+            closeMenu.style.display = 'block';
+            navMenu.style.display = 'block';
+        });
+        closeMenu.addEventListener('click', function(){
+            navBg.style.display = 'none';
+            closeMenu.style.display = 'none';
+            navMenu.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="otherpage.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Centre For Art And Culture</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="header"
+        style="background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Nike/nag4.webp);">
+            <div class="navbar">
+                <h1 class="logo"><span>Tour</span> Hero</h1>
+                <ul class="nav" id="nav">
+                    <li><a href="/index.html">Home</a></li>
+                    <div class="dropdwn">
+                        <li><a href="#" class="dropdwn-hover">Explore</a></li>
+                        <div class="dropdwn-menu">
+                            <a href="#">Cities</a>
+                            <a href="#">Attractions</a>
+                            <a href="#">Hotels</a>
+                            <a href="#">Foods</a>
+                            <a href="#">Festivals</a>
+                        </div>
+                    </div>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <iconify-icon icon="ic:round-menu" class="hamburger-menu"></iconify-icon>
+                <div class="nav-bg" ></div>
+                <iconify-icon icon="ic:round-close" class="close"></iconify-icon>
+            </div>
+            <div class="head-con">
+                <h2><a href="https://g.page/NikeArtGallery?share" target="_blank"> Nike Art Gallery,<br>Lekki</a></h2>
+            </div>
+        </div>
+
+        <div class="content">
+            <p>
+                This is the place of a unique art gallery, workshop, and artist retreat. When you visit the place inside, 
+                you will find Nigerian sculptors, craftsmen, and artist honing their skills.
+                Nike art Galley was founded by a legend known as Oyenike Monica Okundaye.
+                <br>
+                Further, you will love the different levels filled into the brim and with one of the biggest collections 
+                in African art or preferably the Nike herself. Admirably, you will be charged nothing to enter inside, 
+                and this makes it among the fun and memorable activities to do here in Lagos. 
+                Additionally, you can purchase some nice-looking things that you will like
+            </p>
+            <div class="gallery">
+            <h2>Gallery</h2>
+                <div class="gallery-img">
+                    <img src="Nike/nag1.jpg" alt="Picture of Nike Art Gallery" class="img1">
+                    <img src="Nike/nag2.jpg" alt="Picture of Nike Art Gallery" class="img2">
+                    <img src="Nike/nag3.jpg" alt="Picture of Nike Art Gallery" class="img3">
+                    <img src="Nike/nag4.webp" alt="Picture of Nike Art Gallery" class="img4">
+                    <img src="Nike/nag5.jpg" alt="Picture of Nike Art Gallery" class="img5">
+                    <img src="Nike/nag6.jpg" alt="Picture of Nike Art Gallery" class="img6">
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="contact">
+            <h3>Contact Us</h3>
+            <h5>Tel: <a href="tel:+2348107456097">+2348107456097</a></h5>
+            <h5>Email: <a href="mailto:olukoluu@gmail.com">olukoluu@gmail.com</a></h5>
+            <h5>Website: <a href="www.biola.com">www.biola.com</a></h5>
+            </div>
+            <div class="social">
+                <h3>Social Handles</h3>
+                <h5><a href="#">Twitter</a></h5>
+                <h5><a href="#">Instagram</a></h5>
+                <h5><a href="#">Facebook</a></h5>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script>
+        const hamMenu = document.querySelector('.hamburger-menu');
+        const closeMenu = document.querySelector('.close');
+        const navBg = document.querySelector('.nav-bg');
+        const navMenu = document.querySelector('.nav');
+        const wrapper = document.querySelector('body')
+        hamMenu.addEventListener('click', function(){
+            navBg.style.display = 'block';
+            closeMenu.style.display = 'block';
+            navMenu.style.display = 'block';
+        });
+        closeMenu.addEventListener('click', function(){
+            navBg.style.display = 'none';
+            closeMenu.style.display = 'none';
+            navMenu.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
