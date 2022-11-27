@@ -1,0 +1,532 @@
+@font-face {
+    font-family: josefin;
+    src: url(JosefinSans-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'josefin';
+    box-sizing: border-box;
+}
+#wrapper{
+    position: relative;
+}
+.header{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(tourPhoto/lagos.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 25px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+/* 
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+span{
+    color: rgb(153, 70, 153);
+}
+
+.logo{
+    color: white;
+    width: 120px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 20% auto;
+    /* font-weight: 500; */
+    font-size: 25px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.navbar ul li a:hover{
+    color: rgb(153, 70, 153);
+}
+
+/* header */
+
+.head-con{
+    color: #fff;
+    display: block;
+    width: 57%;
+    margin: 10% auto;
+}
+
+h2, h4 {
+    text-align: center;
+    margin: 20px;
+}
+
+.head-con h2 a{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(153, 70, 153);
+    text-decoration: none;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Place style */
+
+.place{
+    margin: 80px auto;
+    width: 90%;
+}
+
+.place-grid{
+    margin: 30px auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.place-grid .grid{
+    box-sizing: border-box;
+    width: 350px;
+    height: 30vh;
+    border: 1px solid black;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.place-grid a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.place-grid a:hover{
+    color: rgb(250, 120, 250);
+    text-shadow: 1px 1px 5px black;
+}
+
+.place-grid .grid-1{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/Lekki_Peninsula.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.place-grid .grid-2{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/Lekki-toll-gate-lagos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.place-grid .grid-3{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/ikeja-bus-terminal.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.place-grid .grid-4{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/bi.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.place-grid .grid-5{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/idumota\ mkt.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.place-grid .grid-6{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/lagos.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* sight style */
+
+.sight-grid{
+    margin: 30px 15%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.sight-grid .grid{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    box-shadow: 0.5px 0.5px 5px black;
+}
+.sight-grid .grid a{
+    height: 15px;
+    box-sizing: border-box;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    position: relative;
+}
+
+.sight-grid .grid a::after{
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    background-color: purple;
+    left: 0;
+    top: 0;
+    transition: .5s;
+    z-index: -1;
+}
+.sight-grid .grid a:hover::after{
+    width: 100%;
+}
+.sight-grid .grid a:hover{
+    border: none;
+    color: #fff;
+}
+.sight-grid .grid1-img{
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/africa-shrine.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+.sight-grid .grid2-img{
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/lcc.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+.sight-grid .grid3-img{
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/nike.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+.sight-grid .grid4-img{
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/elegushi.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+.sight-grid .grid5-img{
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/ibeshe-bridge.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+.sight-grid .grid-text{
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 0 50px;
+    line-height: 25px;
+    z-index: 1;
+}
+.sight h4 a{
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 8px 10px 4px 10px;
+    color: black;
+    text-decoration: none;
+    font-size: bold;
+    position: relative;
+}
+.sight h4 a::after{
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    background-color: purple;
+    left: 0;
+    top: 0;
+    transition: .5s;
+    z-index: -1;
+}
+.sight h4 a:hover::after{
+    width: 100%;
+}
+.sight h4 a:hover{
+    color: #fff;
+    border: none;
+}
+
+
+/* Hotel styles */
+
+
+.hotel{
+    margin: 80px auto;
+    width: 90%;
+}
+
+.hotel-grid{
+    margin: 30px auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hotel-grid .grid{
+    box-sizing: border-box;
+    width: 350px;
+    height: 30vh;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.hotel-grid a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hotel-grid a:hover{
+    color: rgb(250, 120, 250);
+    text-shadow: 1px 1px 5px black;
+}
+
+.hotel-grid .grid-1{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/lg-continental.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hotel-grid .grid-2{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/eko-hotel.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hotel-grid .grid-3{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/fd-palace.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hotel-grid .grid-4{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/ssi.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.hotel-grid .grid-5{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/sheraton.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hotel-grid .grid-6{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(tourphoto/nordic-hotel-lagos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#footer{
+    width: 100%;
+    height: 25vh;
+    background-color: #cac6c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+#footer a:hover{
+    color: rgb(250, 120, 250);
+}
+
+.dropdwn{
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+}
+
+.dropdwn-hover{
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.dropdwn-menu{
+    position: absolute;
+    display: none;
+    top: 80%;
+    left: 20%;
+    min-width: 50px;
+    background: transparent;
+    color: #fff;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.dropdwn:hover .dropdwn-menu{
+    display: block;
+}
+
+.dropdwn-menu a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    transition: .5s;
+}
+
+.dropdwn-menu a:hover{
+    background-color: transparent;
+    color: rgb(153, 70, 153);
+}
+
+#wrapper .header .navbar > iconify-icon,
+#wrapper .header .navbar > .nav-bg{
+    display: none;
+}
+
+@media screen and (max-width: 480px){
+#wrapper .header .navbar{
+    padding: 20px;
+}
+#wrapper .header .navbar #nav{
+    display: none;
+}
+#wrapper .header .navbar{
+    position: relative;
+}
+#wrapper .header .navbar #nav .dropdwn .dropdwn-menu{
+    top: 0;
+    left: 100%;
+}
+#wrapper .header .navbar #nav .dropdwn .dropdwn-menu a{
+    color: black;
+}
+#wrapper .header .navbar > iconify-icon{
+    display: inline-block;
+    font-size: 38px;
+    color: #fff;
+}
+#wrapper .header .navbar > .close{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    color: #000;
+    right: 20px;
+}
+#wrapper .header .navbar > .nav-bg{
+    display: none;
+    position: fixed;
+    top: -20px;
+    left: -15px;
+    background-color: rgba(0, 0, 0, 0.705);
+    height: 110vh;
+    width: 108%;
+    z-index: 1;
+}
+#wrapper .header .navbar .nav li a{
+    width: 50%;
+    margin-top: 10px;
+    color: #000;
+    z-index: 2;
+    display: block;
+}
+#wrapper .header .navbar .nav{
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 50vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 70px;
+    display: none;
+    z-index: 2;
+}
+.sight-grid .grid{
+    flex-wrap: wrap;
+    width: 100%;
+}
+.sight-grid{
+    margin: 30px 10px;
+}
+.sight-grid .grid-img{
+    height: 30vh;
+}
+.sight-grid .grid-text{
+    width: 100%;
+    padding: 0 ;
+    order: 2;
+}
+#footer{
+    width: 100%;
+    column-gap: 70px;
+    font-size: 15px;
+}
+.head-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 300px;
+}
+}
