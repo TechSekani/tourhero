@@ -373,7 +373,11 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     column-gap: 430px;
+=======
+    column-gap: 230px;
+>>>>>>> 111369dd6251769069c07edf35c77c2b4077bd4c
     color: #000;
     font-size: 18px;
     font-weight: bold;
