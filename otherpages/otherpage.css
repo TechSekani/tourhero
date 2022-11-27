@@ -154,6 +154,7 @@ span{
 }
 
 .content .gallery{
+    width: 100%;
     margin: 50px auto;
 }
 
@@ -163,7 +164,7 @@ span{
 }
 
 .content .gallery .gallery-img img{
-    width: 450px;
+    width: 45%;
     height: 360px;
 }
 
@@ -204,7 +205,7 @@ span{
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
     #wrapper .header .navbar{
         padding: 20px;
     }
@@ -270,6 +271,17 @@ span{
         justify-content: center;
         width: 90%;
         height: 300px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .content .gallery .gallery-img img{
+        width: 550px;
+    }
+    #footer{
+        width: 100%;
+        column-gap: 250px;
+        font-size: 22px;
     }
 }
 

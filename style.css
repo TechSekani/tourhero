@@ -444,7 +444,7 @@ h4{
     display: none;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
 #wrapper .header .navbar{
     padding: 20px;
 }
@@ -529,4 +529,37 @@ h4{
     width: 90%;
     height: 300px;
 }
+}
+
+
+@media screen and (max-width: 992px){
+    .place-grid .grid{
+        width: 330px;   
+    }
+    .hotel-grid .grid{
+        width: 330px;
+    }
+    .sight-grid .grid{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .sight-grid{
+        margin: 30px 10px;
+        row-gap: 70px;
+    }
+    .sight-grid .grid-img{
+        height: 50vh;
+    }
+    .sight-grid .grid-text{
+        width: 100%;
+        padding: 10px 40px;
+        order: 2;
+        font-size: 20px;
+        line-height: 35px;
+    }
+    #footer{
+        width: 100%;
+        column-gap: 250px;
+        font-size: 22px;
+    }
 }
