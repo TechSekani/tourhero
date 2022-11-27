@@ -258,12 +258,12 @@ span{
         position: fixed;
         top: 0;
         left: 0;
-        padding: 70px;
+        padding: 90px;
         display: none;
         z-index: 2;
     }
     .content .gallery .gallery-img img{
-        width: 380px;
+        width: 350px;
     }
     .head-con{
         display: flex;
@@ -272,9 +272,17 @@ span{
         width: 90%;
         height: 300px;
     }
+    #footer{
+        display: block;
+        width: 100%;
+        line-height: 40px;
+        height: 40vh;
+        font-size: 20px;
+    }
 }
 
-@media screen and (max-width: 992px){
+
+@media screen and (min-width: 770px) and (max-width: 992px){
     .content .gallery .gallery-img img{
         width: 550px;
     }
