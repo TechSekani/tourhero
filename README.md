@@ -1,6 +1,3 @@
 # tourhero
- 
-Webpage that serve as a tour guide containing
-all noticeable places to see when you come to Lagos .
-Done using Html and CSS
-the JavaScript is for the Hamburger menu on mobile view.
+TourHero gives an insight of what to expect the food, the culture, the festives and lot more about Lagos state,Nigeria before visitation
+I implemented my Html and CSS skills learnt so far, and also Javascript for the hamburger menu when on the mobile view.
